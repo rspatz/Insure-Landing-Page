@@ -69,7 +69,7 @@ Florin's Code:
       </p>
     </div>
     </section>
-    ```
+ ```
 Each section was given a class of 'container' and a class of 'flex.' In the
 stylesheet, all that had to be done was to assign 'display: flex' to the
 'flex' class for the widescreen version, and 'flex-direction: column' for
