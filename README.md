@@ -3,7 +3,7 @@ Insure Landing Page project from FrontEnd Mentor
 
 [Frontend Mentor](https://www.frontendmentor.io) challenges allow you to improve your skills in a real-life workflow.
 
-![Design preview for the Insure landing page coding challenge](./design/Screenshot_2021-08-31 Frontend Mentor Insure landing page.png)
+./design/Screenshot_2021-08-31 Frontend Mentor Insure landing page.png
 
 ### Robert B. Spatz: My Thoughts
 
