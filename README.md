@@ -56,7 +56,7 @@ My Code:
 
 Florin's Code:
 
-````html
+```html
 <section class="container">
   <h2>We’re different</h2>
   <div class="flex">
