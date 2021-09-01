@@ -8,19 +8,12 @@ Insure Landing Page project from FrontEnd Mentor
 - [Built with](#built-with)
 - [My thoughts](#my-thoughts)
   - [The solution](#the-solution)
+  - [Mobile Navigation](#mobile-navigation)
   - [Screenshot](#screenshot)
   - [What I learned](#what-I-learned)
 - [My process](#my-process)
 - [Continued development](#continued-development)
 - [Useful resources](#useful-resources)
-  
-  - [structural drawing](#structural-drawing)
-- [What I learned](#what-i-learned)
-- [Features](#features)
-- [Issue Report](#issue-report)
-- [Author](#author)
-- [Acknowledgments](#acknowledgments)
-- [Resources](#resources)
 
 ### Built with
 
@@ -101,7 +94,46 @@ stylesheet, all that had to be done was to assign 'display: flex' to the
 'flex' class for the widescreen version, and 'flex-direction: column' for
 the mobile version, and the basic design would pop into place.
 
-### JavaScript for the Mobile Navigation
+### Mobile Navigation
+
+First, the HTML:
+
+```html
+  <button class="hamburger" id="hamburger">
+    <img
+      class="close"
+      src="./images/icon-hamburger.svg"
+      alt="hamburger"
+    />
+    <img class="open" src="./images/icon-close.svg" alt="close" />
+  </button>
+```
+Then, the CSS:
+
+```css
+nav .hamburger {
+    background-color: transparent;
+    border: 0;
+    display: flex;
+    cursor: pointer;
+  }
+
+  nav .hamburger:focus {
+    outline: none;
+  }
+
+  nav .hamburger .close {
+    display: none;
+  }
+
+  nav .hamburger.show .open {
+    display: none;
+  }
+
+  nav .hamburger.show .close {
+    display: block;
+  }
+```
 
 The Vanilla JS navigation was very simple:
 
@@ -117,10 +149,11 @@ The Vanilla JS navigation was very simple:
 
 ### Screenshot
 
-![src-desktop](design/Screenshot_2021-08-31 Frontend Mentor Insure landing page.png)
+**Desktop:**
+![src-desktop](./design/Screenshot_2021-08-31 Frontend Mentor Insure landing page.png)
 
-
-![src-desktop](design/Screenshot_2021-08-31 Frontend Mentor Insure landing page Mobile.png)
+**Mobile:**
+![src-desktop](./design/Screenshot_2021-08-31 Frontend Mentor Insure landing page Mobile.png)
     
 ### What I learned
     
