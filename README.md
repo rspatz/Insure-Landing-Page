@@ -117,10 +117,10 @@ The Vanilla JS navigation was very simple:
 
 ### Screenshot
 
-![src-desktop](./design/Screenshot_2021-08-31 Frontend Mentor Insure landing page.png)
+![src-desktop](design/Screenshot_2021-08-31 Frontend Mentor Insure landing page.png)
 
 
-![src-desktop](./design/Screenshot_2021-08-31 Frontend Mentor Insure landing page Mobile.png)
+![src-desktop](design/Screenshot_2021-08-31 Frontend Mentor Insure landing page Mobile.png)
     
 ### What I learned
     
