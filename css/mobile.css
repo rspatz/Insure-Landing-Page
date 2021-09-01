@@ -1,0 +1,175 @@
+@media screen and (max-width: 760px) {
+  body {
+    text-align: center;
+  }
+
+  .container {
+    padding: 0;
+  }
+
+  nav {
+    padding: 1.25em 0;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  nav .flex {
+    flex-direction: row;
+  }
+
+  nav .img-wrapper {
+    text-align: left;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  .show a {
+    color: var(--light-gray);
+  }
+
+  nav ul.show {
+    background-color: var(--very-dark-violet);
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    margin: 0;
+    top: 4em;
+    left: 0;
+    width: 100vw;
+    height: calc(100vh - 4em);
+    z-index: 100;
+  }
+
+  /* Changes the space between mobile links */
+  nav ul li {
+    margin: 1.5em 0;
+    font-size: 1.25em;
+  }
+
+  .btn-reverse {
+    border-color: #fff;
+    color: #fff;
+  }
+
+  nav ul a {
+    color: #fff;
+  }
+
+  h1 {
+    font-size: 2.75rem;
+    margin: 1.5em 0 0.5em 0;
+  }
+
+  header p {
+    font-size: 1em;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 1.5em;
+  }
+
+  header {
+    padding-top: 0;
+    margin-bottom: 3em;
+  }
+
+  header:before,
+  header:after {
+    display: none;
+  }
+
+  .flex {
+    flex-direction: column;
+  }
+
+  .flex {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  nav {
+    background-color: #fff;
+    padding: 1.25em 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 100;
+  }
+
+  nav .hamburger {
+    background-color: transparent;
+    border: 0;
+    display: flex;
+    cursor: pointer;
+  }
+
+  nav .hamburger:focus {
+    outline: none;
+  }
+
+  nav .hamburger .close {
+    display: none;
+  }
+
+  nav .hamburger.show .open {
+    display: none;
+  }
+
+  nav .hamburger.show .close {
+    display: block;
+  }
+
+  .image-style {
+    display: inline-block;
+    margin-left: -1.25em;
+    margin-bottom: -0.7em;
+    max-width: calc(100% + 2.4em);
+  }
+
+  .reverse-mobile {
+    flex-direction: column-reverse;
+  }
+
+  .space {
+    margin-top: 2.5rem;
+    margin: 2rem 0 0 0;
+  }
+
+  .bg-violet {
+    background-color: var(--dark-violet);
+    height: 50vh;
+  }
+
+  .bg-violet button {
+    margin-top: 0;
+  }
+
+  .bg-violet:before {
+    background-image: url("../images/bg-pattern-how-we-work-mobile.svg")
+      no-repeat;
+  }
+
+  .bg-violet h2 {
+    width: 100%;
+    margin: 1.5em 0 1em 0;
+    font-size: 2.75em;
+    line-height: 1em;
+  }
+
+  footer {
+    background-image: url(../images/bg-pattern-footer-mobile.svg);
+    background-size: 100% auto;
+    background-position: top center;
+    padding: 4em 0 2em;
+  }
+
+  footer ul.flex {
+    flex-direction: row;
+  }
+
+  footer .flex div {
+    width: 40%;
+  }
+}
