@@ -3,9 +3,33 @@ Insure Landing Page project from FrontEnd Mentor
 
 [Frontend Mentor](https://www.frontendmentor.io) challenges allow you to improve your skills in a real-life workflow.
 
-./design/Screenshot_2021-08-31 Frontend Mentor Insure landing page.png
+## Table of contents
 
-### Robert B. Spatz: My Thoughts
+- [Built with](#built-with)
+- [My thoughts](#my-thoughts)
+  - [The solution](#the-solution)
+  - [Screenshot](#screenshot)
+  - [What I learned](#what-I-learned)
+- [My process](#my-process)
+- [Continued development](#continued-development)
+- [Useful resources](#useful-resources)
+  
+  - [structural drawing](#structural-drawing)
+- [What I learned](#what-i-learned)
+- [Features](#features)
+- [Issue Report](#issue-report)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
+- [Resources](#resources)
+
+### Built with
+
+- Semantic HTML5 markup
+- Flex-box
+- Vanilla JavaScript (mobile navigation)
+- [Google font](https://fonts.google.com/), using the CSS3 @font-face
+
+### My Thoughts
 
 I had finished most of this project on my own, but I was not satisfied with
 the result:
@@ -21,6 +45,8 @@ the result:
    shrank and all but disappeared in the mobile footer, and I didn't know why.
    The button in the top navigation didn't line up properly with the
    navigation links.
+
+### The Solution
 
 I recently discovered Florin Pop's YouTube channel (link below), and I noticed
 that he had a 2 1/2-hour live coding video demonstrating his version of this project.
@@ -69,11 +95,32 @@ Florin's Code:
       </p>
     </div>
     </section>
- ```
+```
 Each section was given a class of 'container' and a class of 'flex.' In the
 stylesheet, all that had to be done was to assign 'display: flex' to the
 'flex' class for the widescreen version, and 'flex-direction: column' for
 the mobile version, and the basic design would pop into place.
+
+### JavaScript for the Mobile Navigation
+
+The Vanilla JS navigation was very simple:
+
+```javascript
+  const hamburger = document.getElementById("hamburger");
+  const menu = document.getElementById("menu");
+
+  hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("show");
+    menu.classList.toggle("show");
+  });
+```
+
+### Screenshot
+
+![src-desktop](./design/Screenshot_2021-08-31 Frontend Mentor Insure landing page.png)
+
+
+![src-desktop](./design/Screenshot_2021-08-31 Frontend Mentor Insure landing page Mobile.png)
     
 ### What I learned
     
@@ -81,8 +128,16 @@ I am learning more about Flexbox, such as 'align-items: center;' which I used
 to properly align the top navigation button with the links. I have since used
 this to align icons and other elements on other FrontEnd Mentor projects that
  I had been having problems with.
-    
+
+### My Process
+1. First I mark up the content using semantic HTML5
+2. Next, I apply the base styles in CSS3 as well as the custom font stack
+3. Then I add the images
+4. Next, I build out the design, working from the top down, including the mobile version
+5. Finally, I apply JavaScript for the mobile navigation, form validation, etc.
+
 ### Continued Development
+
 Thanks again to Florin Pop, I have learned how to create a simple mobile
 navigation using JavaScript, which I am applying to several
 FrontEnd Mentor projects. I am going to practice this technique until it
@@ -94,7 +149,7 @@ working through a couple of courses on Udemy to learn JavaScript, and I
 want to continue using what I learn on all my projects. I am currently
 learning about string-template-literals and functions.
     
-### Useful resources
+### Useful Resources
 1. Code along with Florin Pop: Insure Landing Page
 (https://www.youtube.com/watch?v=9HVKR_hK0nY&t=7659s)
 I highly recommend this video for anyone who struggles with any part of this project, or for
