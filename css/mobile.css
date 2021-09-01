@@ -164,6 +164,10 @@
     background-position: top center;
     padding: 4em 0 2em;
   }
+  
+  footer .container {
+  width: 100%;
+}
 
   footer ul.flex {
     flex-direction: row;
