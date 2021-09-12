@@ -31,15 +31,19 @@
 
   nav ul.show {
     background-color: var(--very-dark-violet);
-    display: flex;
+    display: none;
     flex-direction: column;
     position: fixed;
-    margin: 0;
+    margin: -41 6 42 10;
     top: 4em;
     left: 0;
     width: 100vw;
     height: calc(100vh - 4em);
     z-index: 100;
+  }
+  
+    nav ul.show.disclose {
+    display:flex;
   }
 
   /* Changes the space between mobile links */
