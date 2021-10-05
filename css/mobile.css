@@ -31,19 +31,15 @@
 
   nav ul.show {
     background-color: var(--very-dark-violet);
-    display: none;
+    display: flex;
     flex-direction: column;
     position: fixed;
-    margin: -41 6 42 10;
+    margin: 0;
     top: 4em;
     left: 0;
     width: 100vw;
     height: calc(100vh - 4em);
     z-index: 100;
-  }
-  
-    nav ul.show.disclose {
-    display:flex;
   }
 
   /* Changes the space between mobile links */
@@ -168,10 +164,10 @@
     background-position: top center;
     padding: 4em 0 2em;
   }
-  
+
   footer .container {
-  width: 100%;
-}
+    width: 100%;
+  }
 
   footer ul.flex {
     flex-direction: row;
